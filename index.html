@@ -68,6 +68,7 @@
             max-width: 1000px;
             margin: 0 auto;
             padding: 2rem;
+            padding-bottom: 5rem;
         }
 
         .section-title {
@@ -195,32 +196,50 @@
             margin-bottom: 5px;
         }
 
-        /* --- Skills Grid --- */
-        .skills-grid {
+        /* --- Grid Layouts (Skills, Edu, Certs) --- */
+        .grid-layout {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
 
-        .skill-category {
+        .grid-item {
             background-color: var(--card-bg);
-            padding: 1rem;
+            padding: 1.5rem;
             border-radius: 8px;
         }
 
-        .skill-category h4 {
+        .grid-item h4 {
             color: var(--accent);
             margin-bottom: 1rem;
+            font-size: 1.1rem;
+            border-bottom: 1px solid #334155;
+            padding-bottom: 0.5rem;
         }
 
-        .skill-category ul {
+        .grid-item ul {
             list-style-type: none;
             color: var(--text-muted);
         }
 
-        .skill-category li {
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
+        .grid-item li {
+            margin-bottom: 0.6rem;
+            font-size: 0.95rem;
+        }
+        
+        .edu-block {
+            margin-bottom: 1.2rem;
+        }
+        
+        .edu-block strong {
+            color: var(--text-main);
+        }
+        
+        .edu-block span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            display: block;
+            margin-top: 0.2rem;
         }
 
         /* Responsive Design */
@@ -245,13 +264,16 @@
 
     <div class="container">
         
+        <!-- About Section -->
         <h2 class="section-title">About Me</h2>
         <p>Senior Data Scientist with 9 years of enterprise experience building scalable AI, Machine Learning, and NLP solutions. Strong track record of leading end-to-end machine learning lifecycles, from data pipeline development to model deployment and monitoring. Currently focused on designing advanced Large Language Model (LLM) applications and Agentic AI workflows using tools like OpenAI, AutoGen, and Snowflake Cortex to solve complex business problems, reduce manual effort, and drive revenue.</p>
 
+        <!-- Enterprise Experience Timeline -->
         <h2 class="section-title">Career Progression & Enterprise Architecture</h2>
         
         <div class="timeline">
             
+            <!-- Pfizer Agentic AI -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Sep 2025 – Present</span>
@@ -267,6 +289,7 @@
                 </div>
             </div>
 
+            <!-- Pfizer Dynamic Targeting -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Feb 2025 – Aug 2025</span>
@@ -281,6 +304,7 @@
                 </div>
             </div>
 
+            <!-- GSK GenAI -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Jan 2024 – Jan 2025</span>
@@ -296,6 +320,7 @@
                 </div>
             </div>
 
+            <!-- DSO DevSecOps -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Feb 2021 – Dec 2023</span>
@@ -311,6 +336,7 @@
                 </div>
             </div>
 
+            <!-- Humana & ADP -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Feb 2019 – Dec 2020</span>
@@ -325,6 +351,7 @@
                 </div>
             </div>
 
+            <!-- MetLife -->
             <div class="timeline-item">
                 <div class="timeline-content">
                     <span class="timeline-date">Sep 2017 – Jan 2019</span>
@@ -339,7 +366,10 @@
                 </div>
             </div>
 
-        </div> <h2 class="section-title">Open Source Agentic Contributions</h2>
+        </div> <!-- End Timeline -->
+
+        <!-- Open Source Projects -->
+        <h2 class="section-title">Open Source Agentic Contributions</h2>
         
         <div class="card">
             <h3>Open Source Technical Due Diligence Agent</h3>
@@ -365,9 +395,10 @@
             </div>
         </div>
 
+        <!-- Skills -->
         <h2 class="section-title">Technical Arsenal</h2>
-        <div class="skills-grid">
-            <div class="skill-category">
+        <div class="grid-layout">
+            <div class="grid-item">
                 <h4>AI & Machine Learning</h4>
                 <ul>
                     <li>Agentic AI & Multi-Agent Systems</li>
@@ -376,7 +407,7 @@
                     <li>Time Series Forecasting</li>
                 </ul>
             </div>
-            <div class="skill-category">
+            <div class="grid-item">
                 <h4>Data & Cloud Engineering</h4>
                 <ul>
                     <li>Snowflake (Cortex) & PySpark</li>
@@ -385,7 +416,7 @@
                     <li>CI/CD & MLOps</li>
                 </ul>
             </div>
-            <div class="skill-category">
+            <div class="grid-item">
                 <h4>Frameworks & Tools</h4>
                 <ul>
                     <li>LangChain, LangGraph, Ollama</li>
@@ -394,6 +425,36 @@
                     <li>FastAPI & Streamlit</li>
                 </ul>
             </div>
+        </div>
+
+        <!-- Education & Certifications -->
+        <h2 class="section-title">Education & Credentials</h2>
+        <div class="grid-layout">
+            
+            <div class="grid-item">
+                <h4>Education</h4>
+                <div class="edu-block">
+                    <strong>M.Tech in AI & Machine Learning</strong>
+                    <span>BITS Pilani WILP | Expected 2027</span>
+                </div>
+                <div class="edu-block">
+                    <strong>B.Tech in Computer Science & Engineering</strong>
+                    <span>National Institute of Technology (NIT), Uttarakhand | 2017</span>
+                </div>
+            </div>
+
+            <div class="grid-item">
+                <h4>Cloud & AI Certifications</h4>
+                <ul>
+                    <li>Professional Machine Learning Engineer (GCP) - 2025</li>
+                    <li>IBM Generative AI Experienced - 2025</li>
+                    <li>IBM Generative AI Foundations - 2024</li>
+                    <li>Microsoft Certified: Azure Data Scientist Associate - 2023</li>
+                    <li>AWS Certified Machine Learning Specialty - 2022</li>
+                    <li>AWS Certified Cloud Practitioner - 2022</li>
+                </ul>
+            </div>
+
         </div>
 
     </div>
