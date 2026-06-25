@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vijay Kumar Prajapat | Senior Data Scientist</title>
+    <style>
+        /* Modern Dark Theme CSS */
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+            --accent-hover: #0284c7;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        header {
+            text-align: center;
+            padding: 5rem 2rem 3rem;
+            background: linear-gradient(180deg, #020617 0%, var(--bg-color) 100%);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #38bdf8, #818cf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-weight: 400;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border: 1px solid var(--text-muted);
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .social-links a:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            border-bottom: 2px solid var(--card-bg);
+            padding-bottom: 0.5rem;
+            margin-bottom: 2rem;
+            margin-top: 3rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid var(--accent);
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .card a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .card a:hover {
+            text-decoration: underline;
+        }
+
+        .tags {
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background-color: #334155;
+            color: #cbd5e1;
+            font-size: 0.8rem;
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-right: 5px;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .skill-category {
+            background-color: var(--card-bg);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        .skill-category h4 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .skill-category ul {
+            list-style-type: none;
+            color: var(--text-muted);
+        }
+
+        .skill-category li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Vijay Kumar Prajapat</h1>
+        <h2>Lead Data Scientist | AI & Big Data Architect</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/vijay-kumar-prajapat-944a7b81/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Kumarv78" target="_blank">GitHub</a>
+            <a href="mailto:vijaykumarprajapat64@gmail.com">Email Me</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- About Section -->
+        <h2 class="section-title">About Me</h2>
+        <p>Senior Data Scientist with 9 years of enterprise experience specializing in production-grade Generative AI, distributed Big Data architectures, and robust MLOps lifecycles. Proven track record of scaling multi-agent systems and engineering high-throughput AI pipelines at global tech giants.</p>
+
+        <!-- Enterprise Experience -->
+        <h2 class="section-title">Enterprise Architecture (IBM)</h2>
+        
+        <div class="card">
+            <h3>Agentic AI Supply Chain Platform</h3>
+            <p>Designed an end-to-end Agentic AI workflow utilizing OpenAI models and Snowflake Cortex to automate core supply chain monitoring and reduce inventory write-offs.</p>
+            <div class="tags">
+                <span class="tag">Agentic AI</span>
+                <span class="tag">Snowflake</span>
+                <span class="tag">FastAPI</span>
+                <span class="tag">Python</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Multi-Agent GenAI Platform</h3>
+            <p>Led the development of a production-grade GenAI solution utilizing Microsoft AutoGen and Azure OpenAI to automate complex document processing at scale.</p>
+            <div class="tags">
+                <span class="tag">AutoGen</span>
+                <span class="tag">Azure OpenAI</span>
+                <span class="tag">MLflow</span>
+                <span class="tag">LLMs</span>
+            </div>
+        </div>
+
+        <!-- Open Source Projects -->
+        <h2 class="section-title">Featured Open Source Projects</h2>
+        
+        <div class="card">
+            <h3>Open Source Technical Due Diligence Agent</h3>
+            <p>Orchestrated an autonomous, multi-agent AI system utilizing LangGraph and local LLMs (Llama 3.2 via Ollama) to evaluate code health and community sentiment. Acts as an AI Analyst for CTOs and VC firms to generate structured investment verdicts.</p>
+            <a href="https://github.com/Kumarv78/oss-due-diligence" target="_blank">View Repository →</a>
+            <div class="tags">
+                <span class="tag">LangGraph</span>
+                <span class="tag">Ollama (Llama 3.2)</span>
+                <span class="tag">Multi-Agent</span>
+                <span class="tag">Tavily Search API</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>MCP A2A Demo: Llama + Tools Integration</h3>
+            <p>Built an intelligent agent application utilizing the Model Context Protocol (MCP) and Llama 3.3 (70B) to provide real-time data through autonomous tool execution. Features dynamic tool discovery, Chainlit UI integration, and async processing.</p>
+            <a href="https://github.com/Kumarv78/MCP_demo" target="_blank">View Repository →</a>
+            <div class="tags">
+                <span class="tag">Model Context Protocol (MCP)</span>
+                <span class="tag">Llama 3.3</span>
+                <span class="tag">Chainlit</span>
+                <span class="tag">Asyncio</span>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <h2 class="section-title">Technical Arsenal</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>AI & ML</h4>
+                <ul>
+                    <li>Agentic AI & LLMs</li>
+                    <li>Neural Networks</li>
+                    <li>NLP & Computer Vision</li>
+                    <li>Predictive Modeling</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Data Engineering</h4>
+                <ul>
+                    <li>Snowflake & PySpark</li>
+                    <li>Hadoop Ecosystem</li>
+                    <li>Docker & Kubernetes</li>
+                    <li>CI/CD Pipelines</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h4>Frameworks</h4>
+                <ul>
+                    <li>TensorFlow / PyTorch</li>
+                    <li>FastAPI / Flask</li>
+                    <li>LangChain & AutoGen</li>
+                    <li>MLflow</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
